@@ -1,0 +1,4 @@
+nmcli connection up cores 
+ping -c 10 -i 0.1 192.168.16.1 # Ping should work
+
+cat /dev/urandom | netcat -u 192.168.16.1 55555 

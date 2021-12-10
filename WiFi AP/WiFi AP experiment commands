@@ -1,0 +1,3 @@
+# Make sure that the WiFi AP is on
+# Open netcat
+netcat -lu  192.168.16.1 55555 > "data/bytes/temp_node.dat"

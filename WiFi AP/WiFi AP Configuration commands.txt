@@ -1,0 +1,15 @@
+These commands were run on the computer acting as an access point. The computer was running ubuntu 18.04.
+Note that not all WiFi modules supports working as an access point. 
+
+snap install wifi-ap # install wifi-ap
+
+
+wifi-ap.config set disabled=true 
+
+ wifi-ap.config set wifi.ssid=coresWLAN dhcp.range-start=192.168.16.10 dhcp.range-stop=192.168.16.200 wifi.address=192.168.16.1 wifi.channel=11 wifi.security-passphrase=Samer1234  share.disabled=true
+
+wifi-ap.config set disabled=false
+
+wifi-ap.status restart-ap
+
+wifi-ap.config get # Make sure it is working.
